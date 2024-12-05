@@ -1,0 +1,89 @@
+{
+    "publication": {
+      "nomPublication": "Le Monde des Portes",
+      "slogan": "Tout ce que vous devez savoir sur les portes, de leur design à leur installation",
+      "messageInvitation": "Inscrivez-vous pour des conseils et des idées inspirantes sur les portes",
+      "articleVedette": {
+        "titreArticle": "Portes modernes : Allier style et sécurité",
+        "resume": "Découvrez comment les dernières innovations transforment les portes en éléments à la fois fonctionnels et esthétiques.",
+        "datePublication": "1er Décembre 2024",
+        "categorie": "Design et innovation",
+        "illustration": "images/image.png"
+      },
+      "listeArticles": [
+        {
+          "titreArticle": "Les portes en bois massif : Un classique intemporel",
+          "datePublication": "28 Novembre 2024",
+          "categorie": "Matériaux",
+          "illustration": "images/image.png"
+        },
+        {
+          "titreArticle": "Comment choisir la porte idéale pour votre maison",
+          "datePublication": "20 Novembre 2024",
+          "categorie": "Conseils pratiques",
+          "illustration": "images/image.png"
+        },
+        {
+          "titreArticle": "Les portes coulissantes : Gain de place et élégance",
+          "datePublication": "15 Novembre 2024",
+          "categorie": "Design intérieur",
+          "illustration": "images/image.png"
+        },
+        {
+          "titreArticle": "Portes blindées : Sécurité maximale pour votre habitat",
+          "datePublication": "10 Novembre 2024",
+          "categorie": "Sécurité",
+          "illustration": "images/image.png"
+        },
+        {
+          "titreArticle": "Les portes dans l'histoire : Symboles et significations",
+          "datePublication": "5 Novembre 2024",
+          "categorie": "Culture et histoire",
+          "illustration": "images/image.png"
+        }
+      ],
+      "categories": [
+        {
+          "nomCategorie": "Design et innovation",
+          "descriptionCategorie": "Les tendances modernes et les avancées technologiques appliquées aux portes."
+        },
+        {
+          "nomCategorie": "Matériaux",
+          "descriptionCategorie": "Tout sur les matériaux utilisés pour les portes, du bois au métal."
+        },
+        {
+          "nomCategorie": "Conseils pratiques",
+          "descriptionCategorie": "Des astuces pour choisir, installer et entretenir vos portes."
+        },
+        {
+          "nomCategorie": "Design intérieur",
+          "descriptionCategorie": "Comment intégrer des portes élégantes dans votre décoration intérieure."
+        },
+        {
+          "nomCategorie": "Sécurité",
+          "descriptionCategorie": "Les solutions pour renforcer la sécurité grâce à des portes adaptées."
+        },
+        {
+          "nomCategorie": "Culture et histoire",
+          "descriptionCategorie": "Le rôle symbolique et historique des portes à travers le temps."
+        }
+      ],
+      "equipeRedaction": [
+        {
+          "nomAuteur": "Alice",
+          "specialite": "Architecte d'intérieur",
+          "biographie": "Je conçois des espaces fonctionnels et esthétiques où chaque porte joue un rôle clé."
+        },
+        {
+          "nomAuteur": "Marc",
+          "specialite": "Ingénieur en sécurité",
+          "biographie": "Je partage des solutions techniques pour améliorer la sécurité domestique et commerciale via des portes adaptées."
+        },
+        {
+          "nomAuteur": "Sophie",
+          "specialite": "Historienne de l'architecture",
+          "biographie": "Je mets en lumière les histoires fascinantes et les significations culturelles des portes à travers les époques."
+        }
+      ]
+    }
+  }
