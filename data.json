@@ -42,30 +42,30 @@
           "illustration": "images/image.png"
         }
       ],
-      "categories": [
+      "themes": [
         {
-          "nomCategorie": "Design et innovation",
-          "descriptionCategorie": "Les tendances modernes et les avancées technologiques appliquées aux portes."
+          "nomTheme": "Design et innovation",
+          "descriptionTheme": "Les tendances modernes et les avancées technologiques appliquées aux portes."
         },
         {
-          "nomCategorie": "Matériaux",
-          "descriptionCategorie": "Tout sur les matériaux utilisés pour les portes, du bois au métal."
+          "nomTheme": "Matériaux",
+          "descriptionTheme": "Tout sur les matériaux utilisés pour les portes, du bois au métal."
         },
         {
-          "nomCategorie": "Conseils pratiques",
-          "descriptionCategorie": "Des astuces pour choisir, installer et entretenir vos portes."
+          "nomTheme": "Conseils pratiques",
+          "descriptionTheme": "Des astuces pour choisir, installer et entretenir vos portes."
         },
         {
-          "nomCategorie": "Design intérieur",
-          "descriptionCategorie": "Comment intégrer des portes élégantes dans votre décoration intérieure."
+          "nomTheme": "Design intérieur",
+          "descriptionTheme": "Comment intégrer des portes élégantes dans votre décoration intérieure."
         },
         {
-          "nomCategorie": "Sécurité",
-          "descriptionCategorie": "Les solutions pour renforcer la sécurité grâce à des portes adaptées."
+          "nomTheme": "Sécurité",
+          "descriptionTheme": "Les solutions pour renforcer la sécurité grâce à des portes adaptées."
         },
         {
-          "nomCategorie": "Culture et histoire",
-          "descriptionCategorie": "Le rôle symbolique et historique des portes à travers le temps."
+          "nomTheme": "Culture et histoire",
+          "descriptionTheme": "Le rôle symbolique et historique des portes à travers le temps."
         }
       ],
       "equipeRedaction": [

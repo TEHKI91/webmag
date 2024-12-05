@@ -10,10 +10,10 @@ function getData() {
        // Traitez les données comme vous le souhaitez
        console.log('Données récupérées du fichier JSON :', data);
        /// ON ECRIT LE CODE ICI ! 
-      let name= data.publication.nomPublication;
+      let name = data.publication.nomPublication;
       //console.log(name);
       
-      let slogan= data.publication.slogan;
+      let slogan = data.publication.slogan;
       //console.log(slogan);
       
       let messageInvitation= data.publication.messageInvitation;
@@ -27,7 +27,7 @@ function getData() {
       let articles = data.publication.listeArticles;
 
       let article = articles[0];
-      console.log(article);
+      // console.log(article);
       
       
       articles.forEach(article => {
@@ -35,19 +35,31 @@ function getData() {
       let datePublication = article.datePublication;
       let categorie = article.categorie;
       let illustration = article.illustration;
-        console.log(titre, datePublication, categorie, illustration);
+        // console.log(titre, datePublication, categorie, illustration);
         
         
         
       });
 
       let equipeRedaction= data.publication.equipeRedaction
-      let sectionequipeRedaction = document.getElementById('equipeRedaction')
-       
-       equipeRedaction.forEach(redaction => {
-        afficherequipeRedaction(redaction, container);
+      let sectionequipeRedaction = document.getElementById('team')
+      afficherequipeRedaction(equipeRedaction, sectionequipeRedaction); 
+      
+      let redactions = data.publication.equipeRedaction;
+
+      let redaction = redactions[0];
+      // console.log(redaction);
+      
+      redactions.forEach(redaction => {
+      let nomAuteur= redaction.nomAuteur;
+      let specialite = redaction.specialite;
+      let biographie = redaction.biographie;
+      console.log(nomAuteur, specialite, biographie);
+      
        });
 
+
+       afficherHeader(data);
        /// FIN DU CODE
      })
     .catch((error) => console.error('Erreur lors de la lecture des données :', error));
@@ -56,6 +68,41 @@ function getData() {
  getData();
 
  ///ON écrit les fonctions ici
+
+ function afficherHeader(data) {
+  let publication = data.publication;
+  let titreHeader = publication.nomPublication;
+  let slogan = publication.slogan;
+  let themes = publication.themes;
+  // console.log(description);
+
+  let themesList = " ";
+
+themes.forEach(theme => {
+  themesList +=`<h2>${theme.nomTheme}</h2><p>${theme.descriptionTheme}</p>`;
+  
+});
+
+
+  let header = 
+      `<div>
+            <h2>${titreHeader}</h2>
+            <h1>${slogan}</h1>
+         </div>
+         <div id="themes">
+            <div class="theme">
+               ${themesList}
+            </div>
+         </div>`
+
+  console.log(header);
+  
+ let container = document.getElementById('header');
+ container.insertAdjacentHTML('beforeend', header);
+  
+  
+ }
+
 function afficherArticleVedette(article, container) {
   let titreArticleVedette= article.titreArticle;
   let datearticle= article.datePublication;
@@ -76,6 +123,8 @@ function afficherArticleVedette(article, container) {
   
  
 function afficherequipeRedaction(redaction, container) {
+  console.log(redaction);
+  
   let nomAuteur= redaction.nomAuteur;
       console.log(nomAuteur);
       
@@ -85,24 +134,27 @@ function afficherequipeRedaction(redaction, container) {
       let biographie = redaction.biographie;
       console.log(biographie);
       
-      let equipeRedaction =
+      let team =
       `<div>
-      <img src="${illustration}" alt="photo">
+      <h1>DISCOVER OUR TEAM</h1>
+      <img src="" alt="photo">
       <h2>${nomAuteur}</h2>
       <p>${specialite}${biographie}
       </p>
    </div>
 <div></div>
-<img src="${illustration}" alt="photo">
+<img src="" alt="photo">
       <h2>${nomAuteur}</h2>
       <p>${specialite}${biographie}
       </p>
 </div>
 <div>
-   <img src="${illustration}" alt="photo">
+   <img src="" alt="photo">
       <h2>${nomAuteur}</h2>
       <p>${specialite}${biographie}
       </p>
 </div>`;
-   container.insertAdjacentHTML('afterbegin', equipeRedaction);
+
+   container.insertAdjacentHTML('afterbegin', team);
 }
+
